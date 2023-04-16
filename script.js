@@ -70,8 +70,8 @@ const slider = function () {
 
   //her right butona basınca bir sonraki slayta geçtik
   btnArrowRight.addEventListener("click", nextSlide);
-  //her right butona basınca bir önceki slayta geçtik
 
+  //her left butona basınca bir önceki slayta geçtik
   btnArrowLeft.addEventListener("click", prevSlide);
 
   //yön tuşları ile geçiş
@@ -83,7 +83,7 @@ const slider = function () {
       nextSlide();
     }
   });
-
+  //mause ile hangi noktaya tıklarsak noktayla aynı indexte olan resmi gösteriyoruz
   dotContainer.addEventListener("click", function (e) {
     if (e.target.classList.contains("dots__dot")) {
       //dot ların data-slide değerlerini slide değişkeninde tutuyoruz (data bir obje)
